@@ -8,3 +8,6 @@ RUN echo 'http://alpine.gliderlabs.com/alpine/edge/main' > /etc/apk/repositories
       php5-opcache \
       php5-apcu \
 	  && rm -rf /var/cache/apk/*
+	  
+VOLUME ["/drupal/www/sites/default/files"]
+	  
